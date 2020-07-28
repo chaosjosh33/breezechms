@@ -1,0 +1,6 @@
+first_name, last_name, email_address, status
+"Alex", "Ortiz-Rosado", "alex@breezechms.com", "active"
+"Jon", "VerLee", "jon@breezechms.com", "archived"
+"Fred", "Flintstone", "fredflintstone@example.com", "active"
+"Marie", "Bourne", "mbourne@example.com", "active"
+"Wilma", "Flintstone", "wilmaflinstone@example.com", "active"

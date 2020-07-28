@@ -13,13 +13,21 @@ class PeopleControllerTest extends TestCase
 
     public function testPersonCreated()
     {
+        $data = [
+            'first_name' => 'Sally',
+            'last_name' => 'Ride',
+            'email_address' => 'sallyride@nasa.gov',
+            'status' => 'archived',
+            'group_name' => 'Unassinged'
+        ];
         $expected = [
             'first_name' => 'Sally',
             'last_name' => 'Ride',
             'email_address' => 'sallyride@nasa.gov',
-            'status' => 'archived'
+            'status' => 'archived',
+            'group_id' => 1
         ];
-        $response = $this->json('POST', '/api/people', $expected);
+        $response = $this->json('POST', '/api/people', $data);
         $response
             ->assertStatus(201)
             ->assertJsonFragment($expected);
