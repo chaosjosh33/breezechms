@@ -1,6 +1,6 @@
 # Coding Exercise
 
-Hello, _______________!
+Hello, Josh Lopez!
 
 Below is a coding exercise that we believe will allow you to show off your amazing development skills!
 
@@ -29,12 +29,12 @@ Group columns:
 Here’s an example:
 
 ```
-id, first_name, last_name, email_address, status
-1, "Alex", "Ortiz-Rosado", "alex@breezechms.com", active
-2, "Jon", "VerLee", "jon@breezechms.com", "archived"
-3, "Fred", "Flintstone", "fredflintstone@example.com", "active"
-4, "Marie", "Bourne", "mbourne@example.com", "active"
-5, "Wilma", "Flintstone", "wilmaflinstone@example.com", "active"
+id, first_name, last_name, email_address, status, group_name
+1, "Alex", "Ortiz-Rosado", "alex@breezechms.com", "active", ""
+2, "Jon", "VerLee", "jon@breezechms.com", "archived", "Adult"
+3, "Fred", "Flintstone", "fredflintstone@example.com", "active", "Volunteer"
+4, "Marie", "Bourne", "mbourne@example.com", "active", "Staff"
+5, "Wilma", "Flintstone", "wilmaflinstone@example.com", "active", "Partner"
 ```
 
 ```
@@ -89,3 +89,13 @@ UI tests can be run with `yarn test`
 We’re a fully remote team so communication is really important. Be sure to include any instructions needed for any of our team mates to run and test.
 
 Good luck and we'll get back to you once we review it!
+
+
+## Instructions
+
+Run `php artisan migrate`
+Run `php artisan db:seed`
+Run `php artisan serve`
+Run `yarn start`
+
+Upload CSV allows for group or people csv.  The header row must have the correct keys or an error is thrown.  People table was modified to add group capability, however when uploading bulk people not all persons need a group as blank ones are given the 'Unassigned' group.  
